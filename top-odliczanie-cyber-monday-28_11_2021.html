@@ -1,0 +1,325 @@
+<!-- ODLICZANIE TOP -->
+
+<style>
+
+    .top-banner {
+    padding: 0 !important;
+    display: block;
+    }
+     
+    .top-banner:before {
+      display: none !important;
+      }
+      
+    @media (max-width: 1024px) {
+    
+       .odliczanie-top {
+          display: none !important; 
+       }
+       
+       .odliczanie-kom-mob {
+           background-color: rgba(0, 8, 54, 1) !important;
+           padding: 5px;
+           font-weight: 700;
+           display: block !important;
+       } 
+    
+       .odliczanie-box {
+            height: 100% !important;
+            text-align: center;
+            width: 100% !important;
+            margin: 0 auto;
+       }
+    
+       .odliczanie-cta {
+            padding: 9px 14px !important;
+            position: unset !important;
+            margin: 0 auto !important;
+            width: auto !important;
+       }
+    
+       .odliczanie-cta:hover {
+            color: #000000;
+            background-color: #000000 !important;
+       }
+    
+       .odliczanie-sprawdz {
+            display: block;
+            width: auto !important;
+            background-color: #000000;
+            padding: 13px 0 !important;
+            color: #000000 !important;
+        }
+    
+        .odliczanie-zegar-m {
+            width: 216px;
+            height: 42px;
+            margin: 0 auto;
+        }
+    
+        .odliczanie-zegar-1m {
+            float: left;
+            background:rgba(253, 57, 157, 1);
+            border-radius: 7px;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 6px;
+            font-weight: 700;
+            margin: 0 6px;
+            width: 30px;
+        }
+    
+        .odliczanie-naglowek {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: none;
+            margin-bottom: 6px;
+            color: #eaa908;
+            padding: 3px 6px;
+        }
+    
+        .odliczanie-podpisy {
+            width: 296px;
+            margin: 0 auto;
+            height: 15px;
+            position: relative;
+        }
+    
+        .odliczanie-podpis-1 {
+            color: #ffffff;
+            position: absolute;
+            left: 59px;
+            top: 0px;
+            font-size: 10px;
+        }
+    
+        .odliczanie-podpis-2 {
+            color: #ffffff;
+            position: absolute;
+            left: 101px;
+            top: 0px;
+            font-size: 10px;
+        }
+    
+        .odliczanie-podpis-3 {
+            color: #ffffff;
+            position: absolute;
+            left: 159px;
+            top: 0px;
+            font-size: 10px;
+        }
+    
+        .odliczanie-podpis-4 {
+            color: #ffffff;
+            position: absolute;
+            left: 209px;
+            top: 0px;
+            font-size: 10px;
+        }
+        
+    }
+    
+    .odliczanie-kom-mob {
+      display: none;
+      }  
+      
+    .odliczanie-top {
+       width: 100%;
+       height: 100px;
+       position: relative;
+       display: table;
+       padding-top: 6px;
+       background-color:rgba(0, 8, 54, 1) !important;
+    }
+    
+    .odliczanie-naglowek {
+       font-weight: 700;
+       font-size: 14px;
+       text-transform: none;
+       margin-bottom: 6px;
+       color: rgba(1, 255, 255, 1);
+       text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.5);
+    }
+      
+    .odliczanie-box {
+       height: 100px;
+       text-align: center;
+       width: 35%;
+       margin: 0 auto;
+    }
+      
+    .odliczanie-zegar {
+       width: 296px;
+       height: 55px;
+       margin: 0 auto;
+    }
+      
+    .odliczanie-zegar-1 {
+       float: left;
+       background: rgba(253, 57, 157, 1);
+       border-radius: 9px;
+       color: #ffffff;
+       font-size: 20px;
+       padding: 12px;
+       font-weight: 700;
+       margin: 0 10px;
+       width: 30px;
+    }
+      
+    .odliczanie-podpis {
+       float: left;
+       padding: 0px 0px;
+       width: 72px;
+       margin: 0px 1px;
+       text-align: center;
+       color: #ffffff;
+    }
+      
+    .odliczanie-podpisy {
+       width: 296px;
+       margin: 0 auto;
+       height: 15px;
+    }
+      
+    .odliczanie-cta {
+       position: absolute;
+       right: 2%;
+       top: 31%;
+       width: 219px;
+    }
+      
+    .odliczanie-grafika1 {
+       height: 83px;
+       position: absolute;
+       left: 1%;
+       padding-top: 5px;
+       display: flex;
+    }
+
+    .odliczanie-grafika2 {
+       height: 83px;
+       position: absolute;
+       right: 1%;
+       padding-top: 5px;
+       display: flex;
+       justify-content: flex-end;
+    }
+      
+    .odliczanie-belka {
+       width: 100%;
+       display: table;
+    }     
+      
+    .odliczanie-sprawdz {
+        border: solid 1px;
+        padding: 7px 30px;
+        font-weight: 700;
+        border-color: #000000;
+        color: #000000;
+    }    
+     
+    .odliczanie-cta:hover {
+        color: #000000;
+        background-color: #000000;
+    }
+    
+    .odliczanie-sprawdz:hover {
+       color: #000000 ;
+    }  
+    
+    .promocja-zakonczenie {
+        color: #eaa908;
+        padding-top: 14px;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    
+    </style>
+    
+        <div class="odliczanie-kom-mob">
+    
+            <a href="https://homla.com.pl/black-weekend.html">
+                <div class="odliczanie-box">
+                    <div class="odliczanie-naglowek">
+                        <strong>Cyber Monday</strong> kończy się za:
+                    </div>
+                    <div id="odliczanie-top-m" class="odliczanie-zegar-m">
+    
+                    </div>
+                    <div class="odliczanie-podpisy">
+                        <div class="odliczanie-podpis-1">dni</div>
+                        <div class="odliczanie-podpis-2">godzin</div>
+                        <div class="odliczanie-podpis-3">minut</div>
+                        <div class="odliczanie-podpis-4">sekund</div>
+                    </div>
+                </div>
+            </a>
+    
+        </div>
+    
+        <div class="odliczanie-top">
+            <a href="https://homla.com.pl/black-weekend.html">
+                <div class="odliczanie-grafika1">
+                    <img src="https://homla.com.pl/media/wysiwyg/homla/belka-top/2021_11_FB_CybermMonday_BELKA2.png" alt="Promocja Cyber Monday -30%">  
+                </div>  
+                <div class="odliczanie-grafika2">
+                    <img src="https://homla.com.pl/media/wysiwyg/homla/belka-top/2021_11_FB_CybermMonday_BELKA2.png" alt="Promocja Cyber Monday -30%">  
+                </div>
+                <div class="odliczanie-box">
+                    <div class="odliczanie-naglowek">
+                        <strong>Cyber Monday</strong> kończy się za:
+                    </div>
+                    <div id="odliczanie-top" class="odliczanie-zegar">
+                    </div>
+                    <div class="odliczanie-podpisy">
+                        <div class="odliczanie-podpis">dni</div>
+                        <div class="odliczanie-podpis">godzin</div>
+                        <div class="odliczanie-podpis">minut</div>
+                        <div class="odliczanie-podpis">sekund</div>
+                    </div>
+                </div>
+            </a>    
+        </div>
+    
+        <div class="odliczanie-belka">
+            <p style="padding: 9px 4px;">
+                <strong>
+                    <a href="https://homla.com.pl/dostawa-i-platnosc"><span style="color: red;">DARMOWA DOSTAWA </span>PRZY ZAMÓWIENIACH ZA MINIMUM 149 ZŁ / <span style="color: red;">SZYBKA WYSYŁKA W 24H</span></a>
+                </strong>
+            </p>
+        </div>
+    
+    <script>
+    var countDownDateTop = new Date("November 29, 2021 23:59:59").getTime();
+    
+    var xtop = setInterval(function() {
+    
+      var nowtop = new Date().getTime();
+    
+      var distancetop = countDownDateTop - nowtop;
+    
+      var days = Math.floor(distancetop / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distancetop % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distancetop % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distancetop % (1000 * 60)) / 1000);
+    
+      document.getElementById("odliczanie-top").innerHTML = '<div class="odliczanie-zegar-1">' + days + '</div><div class="odliczanie-zegar-1">' + hours + '</div><div class="odliczanie-zegar-1">' + minutes + '</div><div class="odliczanie-zegar-1">' + seconds + '</div>';
+    
+      document.getElementById("odliczanie-top-m").innerHTML = '<div class="odliczanie-zegar-1m">' + days + '</div><div class="odliczanie-zegar-1m">' + hours + '</div><div class="odliczanie-zegar-1m">' + minutes + '</div><div class="odliczanie-zegar-1m">' + seconds + '</div>';
+    
+      if (distancetop < 0) {
+        clearInterval(xtop);
+        document.getElementById("odliczanie-top").innerHTML = '<div class="promocja-zakonczenie">Promocja zakończona</div>';
+      }
+    
+      if (distancetop < 0) {
+        clearInterval(xtop);
+        document.getElementById("odliczanie-top-m").innerHTML = '<div class="promocja-zakonczenie">Promocja zakończona</div>';
+      }
+    
+    
+    
+    }, 1000);
+    </script>
+    
+    <!-- ODLICZANIE END -->
